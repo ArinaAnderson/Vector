@@ -61,7 +61,6 @@ class Vector {
 }
 
 // Vector operations:
-
 const checkVectorsIfEqual = function (v1, v2) {
   const v1CoordsString = v1.convertCoordsToString();
   const v2CoordsString = v2.convertCoordsToString();
@@ -89,10 +88,7 @@ const addOrSubstractVectors = function (v1, v2, operator) {
     const newVal = sign === '+' ? v1Val + v2Val : v1Val - v2Val;
     newVectorCoords.push(newVal);
   }
-
   return new Vector(newVectorCoords);
 }
 
-const scaleVector = (vector) => {
-
-};
+const scaleVector = (vector) => {};
